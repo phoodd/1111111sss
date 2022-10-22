@@ -76,33 +76,48 @@ body {
     overflow: hidden;
     margin: 0px;
     line-height: 1.5;
-    display: flex;
     background-color: brown;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
 
-.rightside {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+#rightside {
+    display: grid;
+    grid-template-rows: 1fr 4fr 3fr;
+    background-color: rgb(247, 11, 11);
+}
+#rightheader {
+background-color: aquamarine;
+}
+#rightbody {
+background-color: black;
+}
+#rightfooter {
+background-color: antiquewhite;
 }
 
-
-
-.leftside {
-    display: flex;
-    flex-direction: column;
-    height: 2fr;
+#leftside {
+    display: grid;
+    grid-template-rows: 1fr 3fr 4fr;
     background-color: chocolate;
-    width: 50%;
+
 }
-.lefttop {
-    display: flex;
-    height: 2fr;
+#lefttop {
+    display: grid;
+    background-color: aqua;
 }
-.leftbottom {
-    display: flex;
-    flex-direction: column;
-    height: 1fr;
+#leftbody {
+display: grid;
+position: fixed;
+overflow: hidden;
+}
+#leftbottom {
+    display: grid;
     background-color: darkgoldenrod;
+}
+
+.leftimg {
+  max-width: 100%;
+  max-height: 100%;
 }
