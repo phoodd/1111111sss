@@ -76,7 +76,6 @@ body {
     overflow: hidden;
     margin: 0px;
     line-height: 1.5;
-    background-color: brown;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -86,8 +85,23 @@ body {
     font-size: 60px;
   }
 
-
-
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 40px;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 900;
+  color: antiquewhite;
+}
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Seymour One', sans-serif;
+  font-size: 36px;
+  word-spacing: 15px;
+  letter-spacing: 1px;
+  user-select: none;
+  color: aliceblue;
+}
 
 #rightside {
     display: grid;
@@ -95,28 +109,29 @@ body {
     background-color: rgb(247, 11, 11);
 }
 #rightheader {
-background-color: rgb(16, 6, 70);
-display: flex;
-align-items: center;
-justify-content: space-around;
-border: solid rgb(44, 44, 88) 1px;
+  background-color: #050a18;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: solid #050a18 1px;
 }
 
 .text2 {
   font-family: 'Courier New', monospace;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 22.5px;
   font-weight: 550;
   color: antiquewhite;
 }
 
 #rightbody {
-background-color: antiquewhite;
-border: solid black 1px;
-border-left: none;
+  background-color: #050a18;
+  border: solid rgb(61,62,78) 1px;
+  border-left: none;
+  border-right: none;
 }
 #rightfooter {
-background-color: antiquewhite;
+  background-color: #050a18;
 }
 
 
@@ -126,38 +141,46 @@ background-color: antiquewhite;
     display: grid;
     grid-template-rows: 1fr 3fr 4fr;
     background-color: antiquewhite;
-    border: solid black 1px;
+    border: solid rgb(61,62,78) 1px;
     border-top: none;
     border-bottom: none;
+    border-left: none;
 }
 #lefttop {
     display: flex;
-    background-color: antiquewhite;
+    background-color: #050a18;
     align-items: center;
     justify-content: center;
-    border: solid black 1px;
+    border: solid rgb(61,62,78) 1px;
     border-right: none;
+    border-left: none;
+    border-top: none;
 }
 #text1 {
   padding-left: 20px;
 }
 
 #leftbody {
-display: grid;
-height: 340px;
-width: 960px;
-border-right: none;
+  display: flex;
+  height: 353px;
+  width: 960px;
+  border-right: none;
+}
+.swiper {
+  height: 100%;
+}
+ swiper-slide img {
+  width: 100%;
 }
 #leftbottom {
-    display: grid;
-    background-color: antiquewhite;
-    border: solid black 1px;
+    display: flex;
+    background-color: #050a18;
+    border: solid rgb(61,62,78) 1px;
     border-right: none;
-}
-
-.leftimg {
-  width: 100%;
-  height: 100%;
+    justify-content: center;
+    padding: 25px;
+    border-bottom: none;
+    border-left: none;
 }
 
 

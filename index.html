@@ -7,25 +7,51 @@
     <link rel="stylesheet" href="main.css">
     <script src="scripts.js"></script>
     <title>Pusku Turismitalu</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Seymour+One&display=swap" rel="stylesheet">
+
+<link
+  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 
 <body>
-<div id="leftside">
+<section id="leftside">
 <div id="lefttop">
-<img src="pics/puskulogo.png" height="80px"alt="" >
-<h1 id="text1">PUSKU TURISMITALU</h1>
+<img src="pics/puskulogowhite.png" height="80px"alt="">
+<h3 id="text1">PUSKU TURISMITALU</h3>
 </div>
+
 <div id="leftbody">
-    
+    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="pics/puskucrop1.jpg"></div>
+      <div class="swiper-slide"><img src="pics/puskucrop2.jpg" height="353"></div>
+      <div class="swiper-slide"><img src="pics/puskucrop3.jpg"></div>
+      <div class="swiper-slide"><img src="pics/puskucrop4.jpg" height="353"></div>
+      
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+</div>
 </div>
 <div id="leftbottom">
+    <h2>Pusku Turismitalu on meeldiv koht puhkamiseks ning seiklusteks merel.<br> 
+    Me asume kaunis Läänemaa looduses. Meri on siit kiviga visatavas kauguses<br> Pusku Turismitalus on mitmeid 
+    erinevaid võimalusi ennast vabaks lasta ja lõõgastuda.</h2>
 
 </div>
 
-</div>
+</section>
     
 
-<div id="rightside">
+<section id="rightside"> 
 
 <div id="rightheader">
 
@@ -51,8 +77,25 @@
 <footer id="rightfooter">
 
 </footer>
-    </div>
+</section>
 
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper', {
+    autoplay: {
+        delay: 9000,
+        disableOnInteraction: false,
+    },
+    loop: true,
+  
+    
+    
+  
+    
+    
+  
+   
+  });</script>
 </body>
 </html>
