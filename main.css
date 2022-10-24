@@ -92,15 +92,16 @@ h2 {
   font-size: 18px;
   font-weight: 900;
   color: antiquewhite;
+  user-select: none;
 }
 h3 {
   font-family: 'Montserrat', sans-serif;
   font-family: 'Seymour One', sans-serif;
-  font-size: 36px;
-  word-spacing: 15px;
+  font-size: 24px;
   letter-spacing: 1px;
   user-select: none;
-  color: aliceblue;
+  color: antiquewhite;
+  text-decoration: none;
 }
 
 #rightside {
@@ -108,6 +109,11 @@ h3 {
     grid-template-rows: 1fr 4fr 3fr;
     background-color: rgb(247, 11, 11);
 }
+
+
+
+
+
 #rightheader {
   background-color: #050a18;
   display: flex;
@@ -116,13 +122,14 @@ h3 {
   border: solid #050a18 1px;
 }
 
-.text2 {
-  font-family: 'Courier New', monospace;
-  text-decoration: none;
-  font-size: 22.5px;
-  font-weight: 550;
-  color: antiquewhite;
-}
+
+
+
+
+
+
+
+
 
 #rightbody {
   background-color: #050a18;
@@ -173,6 +180,7 @@ h3 {
 }
 .swiper-slide {
   transition: 2s;
+  user-select: none;
 }
 .swiper-slide:hover {
   background-size: 150%;
