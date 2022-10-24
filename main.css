@@ -199,11 +199,12 @@ swiper-slide img {
   background-color: black;
   animation: in 0.8s;
   animation-fill-mode: forwards;
+  animation-delay: 0.1s;
 }
 
 .swiper-slide {
   user-select: none;
-  animation: out 0.2s;
+  animation: out 0.4s;
 }
 
 @keyframes in {
