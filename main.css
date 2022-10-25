@@ -105,7 +105,7 @@ h3 {
 
 #rightside {
   display: grid;
-  grid-template-rows: 1fr 4fr 3fr;
+  grid-template-rows: 1fr 7fr;
   background-color: rgb(247, 11, 11);
 }
 
@@ -139,11 +139,7 @@ h3 {
   border-right: none;
 }
 
-#rightfooter {
-  background-color: #050a18;
-  border: solid rgb(61, 62, 78) 1px;
-  border-top: 0px;
-}
+
 
 
 
