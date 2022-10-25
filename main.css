@@ -40,7 +40,7 @@ a:not([class]) {
 /* Make images easier to work with */
 img,
 picture {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -116,10 +116,6 @@ h3:hover {
   background-color: #050a18;
 }
 
-
-
-
-
 .rightheader {
   background-color: #050a18;
   display: flex;
@@ -127,6 +123,7 @@ h3:hover {
   align-items: center;
   border: solid #222 1px;
   width: 100%;
+  border-top: none;
 }
 
 .rightheader a {
@@ -134,28 +131,25 @@ h3:hover {
 }
 
 .mainnav {
-  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .mainnav .ul1 {
-  position: fixed;
   display: flex;
-}
-.mainnav .ul1 li {
-  margin-left: 3em;
+  gap: 50px;
+  align-items: center;
 }
 .rightbody {
   display: flex;
   flex-direction: row;
   border-left: solid #222 1px;
   overflow-x: scroll;
-  white-space: nowrap;
+  height: 100%;
 }
 .Asukoht {
-  height: 823px;
-  width: 959px;
+  height: 100%;
+  width: 100%;
 }
 
 li {
@@ -177,7 +171,7 @@ li {
   position: absolute;
   left: 0;
   top: 0;
-  width: 960px;
+  width: 50.5%;
   height: 118px;
   background: -moz-linear-gradient(left, rgba(109, 62, 34, 0.5) 10%, #050a18 100%);
   /* FF3.6+ */
@@ -204,7 +198,6 @@ li {
   height: 100%;
   z-index: -100;
 }
-
 swiper-slide img {
   width: 100%;
 
