@@ -101,27 +101,35 @@ h3 {
   font-size: 24px;
   user-select: none;
   color: antiquewhite;
+  animation: out2 0.7s;
 }
-
+h3:hover {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 24px;
+  user-select: none;
+  color: antiquewhite;
+  animation: in1 0.3s;
+}
 #rightside {
   display: grid;
   grid-template-rows: 1fr 7fr;
-  background-color: rgb(247, 11, 11);
+  background-color: #050a18;
 }
 
 
 
 
 
-#rightheader {
+.rightheader {
   background-color: #050a18;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border: solid #050a18 1px;
+  border: solid #222 1px;
 }
 
-#rightheader a {
+.rightheader a {
   text-decoration: none;
 }
 
@@ -133,12 +141,11 @@ h3 {
 
 
 
-#rightbody {
-  background-color: #050a18;
-  border: solid rgb(61, 62, 78) 1px;
-  border-right: none;
+.rightbody {
 }
-
+li {
+  list-style: none;
+}
 
 
 
@@ -216,10 +223,23 @@ swiper-slide img {
     transform: scale(1.01);}
   to {
     transform: scale(1);
-    opacity: 100%;
   }
 }
 
+@keyframes in1 {
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes out2 {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 #leftbottom {
   display: flex;
   background-color: #050a18;
