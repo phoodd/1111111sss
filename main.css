@@ -78,7 +78,9 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
+.white {
+  color: antiquewhite;
+}
 h1 {
   font-family: 'Courier New', monospace;
   font-size: 60px;
@@ -100,7 +102,7 @@ h3 {
   font-size: 24px;
   user-select: none;
   color: antiquewhite;
-  animation: out2 0.3s;
+  
 }
 h3:hover {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -108,11 +110,11 @@ h3:hover {
   font-size: 24px;
   user-select: none;
   color: antiquewhite;
-  animation: in1 0.1s forwards;
+  
 }
 #rightside {
   display: grid;
-  grid-template-rows: 1fr 7fr;
+  grid-template-rows: 1fr 7fr;  
   background-color: #050a18;
 }
 
@@ -140,18 +142,22 @@ h3:hover {
   gap: 50px;
   align-items: center;
 }
+.ul1 li {
+  animation: out2 0.2s;
+}
+.ul1 li:hover {
+animation: in1 0.3s forwards;
+}
 .rightbody {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-column: 1fr 1fr 1fr 1fr 1fr;
   border-left: solid #222 1px;
-  overflow-x: scroll;
-  height: 100%;
+  overflow-y:scroll;
 }
-.Asukoht {
-  height: 100%;
-  width: 100%;
+.asukoht {
+  max-height: 832px;
+  max-width: 100%;
 }
-
 li {
   list-style: none;
 }
