@@ -154,13 +154,16 @@ animation: in1 0.3s forwards;
   border-left: solid #222 1px;
   overflow-y:scroll;
 }
-.asukoht {
-  max-height: 832px;
-  max-width: 100%;
+.rightbody .asukoht {
+  height: 832px;
+  width: 100%;
+}
+.asukohttoptext {
+  padding: 2em;
 }
 .googlemaps {
-  display: flex;
-  justify-content: ;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 li {
   list-style: none;
@@ -255,9 +258,6 @@ swiper-slide img {
   display: flex;
   background-color: #050a18;
   justify-content: center;
-  border: solid rgb(61, 62, 78) 1px;
-  border-bottom: none;
-  border-left: none;
-  border-right: none;
-  margin-top: -2px;
+  border-top: solid rgb(61, 62, 78) 1px;
+  padding: 2em;
 }
