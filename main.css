@@ -153,6 +153,7 @@ animation: in1 0.3s forwards;
   grid-column: 1fr 1fr 1fr 1fr 1fr;
   border-left: solid #222 1px;
   overflow-y:scroll;
+  position: relative;
 }
 .rightbody .asukoht {
   height: 832px;
