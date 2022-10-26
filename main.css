@@ -158,13 +158,13 @@ animation: in1 0.3s forwards;
   max-height: 832px;
   max-width: 100%;
 }
+.googlemaps {
+  display: flex;
+  justify-content: ;
+}
 li {
   list-style: none;
 }
-
-
-
-
 
 #leftside {
   display: grid;
