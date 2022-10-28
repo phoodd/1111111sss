@@ -146,7 +146,7 @@ animation: in1 0.3s forwards;
 }
 .googlemaps {
   display: flex;
-  align-items: flex-end;
+  align-self: flex-end;
 }
 li {
   list-style: none;
