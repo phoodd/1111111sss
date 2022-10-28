@@ -1,22 +1,7 @@
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
+*{
   margin: 0;
+  box-sizing: border-box;
+  padding:0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -71,6 +56,7 @@ select {
 
 /* Set core body defaults */
 body {
+  position: fixed;
   height: 100%;
   width: 100%;
   text-rendering: optimizeSpeed;
@@ -80,10 +66,10 @@ body {
 }
 .white {
   color: antiquewhite;
+  font-family: 'Montserrat', sans-serif;
 }
 h1 {
-  font-family: 'Courier New', monospace;
-  font-size: 60px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h2 {
@@ -93,7 +79,6 @@ h2 {
   font-size: 18px;
   font-weight: 900;
   color: antiquewhite;
-  user-select: none;
 }
 
 h3 {
@@ -123,7 +108,6 @@ h3:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid #222 1px;
   width: 100%;
   border-top: none;
 }
@@ -149,22 +133,22 @@ h3:hover {
 animation: in1 0.3s forwards;
 }
 .rightbody {
-  display: grid;
-  grid-column: 1fr 1fr 1fr 1fr 1fr;
   border-left: solid #222 1px;
-  overflow-y:scroll;
-  position: relative;
+  overflow-y: scroll;
 }
 .rightbody .asukoht {
-  height: 832px;
+  height: 100%;
   width: 100%;
 }
 .asukohttoptext {
   padding: 2em;
 }
+.meresaun {
+  padding: 2em;
+}
 .googlemaps {
-  flex-direction: row;
-  justify-content: flex-end;
+  display: flex;
+  align-items: flex-end;
 }
 li {
   list-style: none;
@@ -172,7 +156,7 @@ li {
 
 #leftside {
   display: grid;
-  grid-template-rows: 1fr 3fr 4fr;
+  grid-template-rows: 0.1fr 0.1fr 1fr;
   background-color: #050a18;
 }
 
