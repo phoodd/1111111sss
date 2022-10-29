@@ -53,7 +53,9 @@ select {
   }
 }
 
-
+br {
+  user-select:none
+}
 /* Set core body defaults */
 body {
   position: fixed;
@@ -67,6 +69,7 @@ body {
 .white {
   color: antiquewhite;
   font-family: 'Montserrat', sans-serif;
+  line-height: 31.8px;
 }
 h1 {
   font-family: 'Montserrat', sans-serif;
@@ -99,7 +102,7 @@ h3:hover {
 }
 #rightside {
   display: grid;
-  grid-template-rows: 1fr 7fr;  
+  grid-template-rows: 10fr 70fr;  
   background-color: #050a18;
 }
 
@@ -108,6 +111,7 @@ h3:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: solid #222 1px;
 }
 
 .rightheader a {
@@ -131,22 +135,58 @@ h3:hover {
 animation: in1 0.3s forwards;
 }
 .rightbody {
+  position: relative;
   border-left: solid #222 1px;
   overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  height: 100%;
+}
+.rightbody .teenused {
+  height: 100%;
+}
+.rightbody section {
+  scroll-snap-align: start;
 }
 .rightbody .asukoht {
   height: 100%;
-  width: 100%;
 }
-.asukohttoptext {
-  padding: 2em;
+.rightbody .teenusedtext {
+display: flex;
+justify-content: space-evenly;
 }
 .meresaun {
   padding: 2em;
 }
-.googlemaps {
+.uritused {
+  padding: 2em;
+}
+.teenusedpics {
   display: flex;
-  align-self: flex-end;
+  justify-content: space-around
+}
+.rightbody::-webkit-scrollbar {
+  width: 18px;
+}
+.rightbody::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.rightbody::-webkit-scrollbar-thumb {
+  background-color: antiquewhite;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+.rightbody::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(187, 181, 174);
+}
+.asukohttoptext {
+  padding: 2em;
+}
+
+.googlemaps {
+  position: absolute;
+  bottom: 0;
+  display: flex;
 }
 li {
   list-style: none;
@@ -154,17 +194,17 @@ li {
 
 #leftside {
   display: grid;
-  grid-template-rows: 0.1fr 0.1fr 1fr;
+  grid-template-rows: 0.01fr 0.01fr 0.7fr;
   background-color: #050a18;
 }
 
 #lefttop::after {
   content: '';
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
-  width: 50.5%;
-  height: 118px;
+  width: 50%;
+  height: 12.3%;
   background: -moz-linear-gradient(left, rgba(109, 62, 34, 0.5) 10%, #050a18 100%);
   /* FF3.6+ */
   background: -webkit-linear-gradient(left, rgba(109, 62, 34, 0.5) 90%, #050a18 100%);
@@ -178,9 +218,6 @@ li {
   display: flex;
   height: 353px;
   width: 960px;
-  border: solid rgb(61, 62, 78) 1px;
-  border-right: none;
-  border-left: none;
   background-color: #050a18;
 
 
@@ -239,5 +276,5 @@ swiper-slide img {
 }
 #leftbottom {
   background-color: #050a18;
-  padding: 2em 0em 0em 4em;
+  padding: 4em;
 }
