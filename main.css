@@ -102,10 +102,9 @@ h3:hover {
 }
 #rightside {
   display: grid;
-  grid-template-rows: 10fr 70fr;  
+  grid-template-rows: 6.5fr 70fr;
   background-color: #050a18;
 }
-
 .rightheader {
   background-color: #050a18;
   display: flex;
@@ -139,7 +138,6 @@ animation: in1 0.3s forwards;
   border-left: solid #222 1px;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
-  height: 100%;
 }
 .rightbody .teenused {
   height: 100%;
@@ -152,6 +150,7 @@ animation: in1 0.3s forwards;
 }
 .rightbody .teenusedtext {
 display: flex;
+flex-direction: column;
 justify-content: space-evenly;
 }
 .meresaun {
@@ -162,7 +161,9 @@ justify-content: space-evenly;
 }
 .teenusedpics {
   display: flex;
-  justify-content: space-around
+  flex-direction: column;
+  justify-content: space-around;
+  justify-content: flex-end;
 }
 .rightbody::-webkit-scrollbar {
   width: 18px;
@@ -184,8 +185,7 @@ justify-content: space-evenly;
 }
 
 .googlemaps {
-  position: absolute;
-  bottom: 0;
+  bottom: 1px;
   display: flex;
 }
 li {
