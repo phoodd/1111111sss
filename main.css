@@ -101,8 +101,6 @@ h3:hover {
   
 }
 #rightside {
-  display: grid;
-  grid-template-rows: 6.5fr 70fr;
   background-color: #050a18;
 }
 .rightheader {
@@ -111,6 +109,7 @@ h3:hover {
   justify-content: center;
   align-items: center;
   border-bottom: solid #222 1px;
+  height: 6.5%;
 }
 
 .rightheader a {
@@ -146,7 +145,6 @@ animation: in1 0.3s forwards;
   scroll-snap-align: start;
 }
 .rightbody .asukoht {
-  height: 100%;
 }
 .rightbody .teenusedtext {
 display: flex;
